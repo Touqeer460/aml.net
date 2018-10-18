@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MicrosoftDynamicsAXModelStoreContainer" CdmEntityContainer="MicrosoftDynamicsAXEntities">
+    <EntitySetMapping Name="INVENTDIMs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.INVENTDIM">
+        <MappingFragment StoreEntitySet="INVENTDIM">
+          <ScalarProperty Name="INVENTDIMID" ColumnName="INVENTDIMID" />
+          <ScalarProperty Name="INVENTBATCHID" ColumnName="INVENTBATCHID" />
+          <ScalarProperty Name="WMSLOCATIONID" ColumnName="WMSLOCATIONID" />
+          <ScalarProperty Name="WMSPALLETID" ColumnName="WMSPALLETID" />
+          <ScalarProperty Name="INVENTSERIALID" ColumnName="INVENTSERIALID" />
+          <ScalarProperty Name="INVENTLOCATIONID" ColumnName="INVENTLOCATIONID" />
+          <ScalarProperty Name="CONFIGID" ColumnName="CONFIGID" />
+          <ScalarProperty Name="INVENTSIZEID" ColumnName="INVENTSIZEID" />
+          <ScalarProperty Name="INVENTCOLORID" ColumnName="INVENTCOLORID" />
+          <ScalarProperty Name="INVENTSITEID" ColumnName="INVENTSITEID" />
+          <ScalarProperty Name="INVENTGTDID_RU" ColumnName="INVENTGTDID_RU" />
+          <ScalarProperty Name="INVENTPROFILEID_RU" ColumnName="INVENTPROFILEID_RU" />
+          <ScalarProperty Name="INVENTOWNERID_RU" ColumnName="INVENTOWNERID_RU" />
+          <ScalarProperty Name="INVENTSTYLEID" ColumnName="INVENTSTYLEID" />
+          <ScalarProperty Name="LICENSEPLATEID" ColumnName="LICENSEPLATEID" />
+          <ScalarProperty Name="INVENTSTATUSID" ColumnName="INVENTSTATUSID" />
+          <ScalarProperty Name="SHA1HASH" ColumnName="SHA1HASH" />
+          <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+          <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+          <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INVENTLOCATIONs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.INVENTLOCATION">
+        <MappingFragment StoreEntitySet="INVENTLOCATION">
+          <ScalarProperty Name="INVENTLOCATIONID" ColumnName="INVENTLOCATIONID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="MANUAL" ColumnName="MANUAL" />
+          <ScalarProperty Name="EMPTYPALLETLOCATION" ColumnName="EMPTYPALLETLOCATION" />
+          <ScalarProperty Name="MAXPICKINGROUTEVOLUME" ColumnName="MAXPICKINGROUTEVOLUME" />
+          <ScalarProperty Name="PICKINGLINETIME" ColumnName="PICKINGLINETIME" />
+          <ScalarProperty Name="MAXPICKINGROUTETIME" ColumnName="MAXPICKINGROUTETIME" />
+          <ScalarProperty Name="WMSLOCATIONIDDEFAULTRECEIPT" ColumnName="WMSLOCATIONIDDEFAULTRECEIPT" />
+          <ScalarProperty Name="WMSLOCATIONIDDEFAULTISSUE" ColumnName="WMSLOCATIONIDDEFAULTISSUE" />
+          <ScalarProperty Name="INVENTLOCATIONIDREQMAIN" ColumnName="INVENTLOCATIONIDREQMAIN" />
+          <ScalarProperty Name="REQREFILL" ColumnName="REQREFILL" />
+          <ScalarProperty Name="INVENTLOCATIONTYPE" ColumnName="INVENTLOCATIONTYPE" />
+          <ScalarProperty Name="INVENTLOCATIONIDQUARANTINE" ColumnName="INVENTLOCATIONIDQUARANTINE" />
+          <ScalarProperty Name="INVENTLOCATIONLEVEL" ColumnName="INVENTLOCATIONLEVEL" />
+          <ScalarProperty Name="REQCALENDARID" ColumnName="REQCALENDARID" />
+          <ScalarProperty Name="WMSAISLENAMEACTIVE" ColumnName="WMSAISLENAMEACTIVE" />
+          <ScalarProperty Name="WMSRACKNAMEACTIVE" ColumnName="WMSRACKNAMEACTIVE" />
+          <ScalarProperty Name="WMSRACKFORMAT" ColumnName="WMSRACKFORMAT" />
+          <ScalarProperty Name="WMSLEVELNAMEACTIVE" ColumnName="WMSLEVELNAMEACTIVE" />
+          <ScalarProperty Name="WMSLEVELFORMAT" ColumnName="WMSLEVELFORMAT" />
+          <ScalarProperty Name="WMSPOSITIONNAMEACTIVE" ColumnName="WMSPOSITIONNAMEACTIVE" />
+          <ScalarProperty Name="WMSPOSITIONFORMAT" ColumnName="WMSPOSITIONFORMAT" />
+          <ScalarProperty Name="USEWMSORDERS" ColumnName="USEWMSORDERS" />
+          <ScalarProperty Name="INVENTLOCATIONIDTRANSIT" ColumnName="INVENTLOCATIONIDTRANSIT" />
+          <ScalarProperty Name="VENDACCOUNT" ColumnName="VENDACCOUNT" />
+          <ScalarProperty Name="BRANCHNUMBER" ColumnName="BRANCHNUMBER" />
+          <ScalarProperty Name="INVENTSITEID" ColumnName="INVENTSITEID" />
+          <ScalarProperty Name="INVENTCOUNTINGGROUP_BR" ColumnName="INVENTCOUNTINGGROUP_BR" />
+          <ScalarProperty Name="CUSTACCOUNT_BR" ColumnName="CUSTACCOUNT_BR" />
+          <ScalarProperty Name="INVENTPROFILETYPE_RU" ColumnName="INVENTPROFILETYPE_RU" />
+          <ScalarProperty Name="INVENTPROFILEID_RU" ColumnName="INVENTPROFILEID_RU" />
+          <ScalarProperty Name="INVENTLOCATIONIDGOODSINROUTE_RU" ColumnName="INVENTLOCATIONIDGOODSINROUTE_RU" />
+          <ScalarProperty Name="WMSLOCATIONIDGOODSINROUTE_RU" ColumnName="WMSLOCATIONIDGOODSINROUTE_RU" />
+          <ScalarProperty Name="ACTIVITYTYPE_RU" ColumnName="ACTIVITYTYPE_RU" />
+          <ScalarProperty Name="NUMBERSEQUENCEGROUP_RU" ColumnName="NUMBERSEQUENCEGROUP_RU" />
+          <ScalarProperty Name="RETAILWEIGHTEX1" ColumnName="RETAILWEIGHTEX1" />
+          <ScalarProperty Name="FSHSTORE" ColumnName="FSHSTORE" />
+          <ScalarProperty Name="RBODEFAULTWMSPALLETID" ColumnName="RBODEFAULTWMSPALLETID" />
+          <ScalarProperty Name="RBODEFAULTWMSLOCATIONID" ColumnName="RBODEFAULTWMSLOCATIONID" />
+          <ScalarProperty Name="RBODEFAULTINVENTPROFILEID_RU" ColumnName="RBODEFAULTINVENTPROFILEID_RU" />
+          <ScalarProperty Name="ALLOWLABORSTANDARDS" ColumnName="ALLOWLABORSTANDARDS" />
+          <ScalarProperty Name="ALLOWMARKINGRESERVATIONREMOVAL" ColumnName="ALLOWMARKINGRESERVATIONREMOVAL" />
+          <ScalarProperty Name="CONSOLIDATESHIPATRTW" ColumnName="CONSOLIDATESHIPATRTW" />
+          <ScalarProperty Name="CUSTACCOUNT_HU" ColumnName="CUSTACCOUNT_HU" />
+          <ScalarProperty Name="CYCLECOUNTALLOWPALLETMOVE" ColumnName="CYCLECOUNTALLOWPALLETMOVE" />
+          <ScalarProperty Name="DECREMENTLOADLINE" ColumnName="DECREMENTLOADLINE" />
+          <ScalarProperty Name="DEFAULTKANBANFINISHEDGOODSLOCATION" ColumnName="DEFAULTKANBANFINISHEDGOODSLOCATION" />
+          <ScalarProperty Name="DEFAULTPRODUCTIONFINISHGOODSLOCATION" ColumnName="DEFAULTPRODUCTIONFINISHGOODSLOCATION" />
+          <ScalarProperty Name="DEFAULTSHIPMAINTENANCELOC" ColumnName="DEFAULTSHIPMAINTENANCELOC" />
+          <ScalarProperty Name="DEFAULTSTATUSID" ColumnName="DEFAULTSTATUSID" />
+          <ScalarProperty Name="PRINTBOLBEFORESHIPCONFIRM" ColumnName="PRINTBOLBEFORESHIPCONFIRM" />
+          <ScalarProperty Name="PRODRESERVEONLYWHSE" ColumnName="PRODRESERVEONLYWHSE" />
+          <ScalarProperty Name="REMOVEINVENTBLOCKINGONSTATUSCHANGE" ColumnName="REMOVEINVENTBLOCKINGONSTATUSCHANGE" />
+          <ScalarProperty Name="RESERVEATLOADPOST" ColumnName="RESERVEATLOADPOST" />
+          <ScalarProperty Name="RETAILINVENTNEGFINANCIAL" ColumnName="RETAILINVENTNEGFINANCIAL" />
+          <ScalarProperty Name="RETAILINVENTNEGPHYSICAL" ColumnName="RETAILINVENTNEGPHYSICAL" />
+          <ScalarProperty Name="RETAILWMSLOCATIONIDDEFAULTRETURN" ColumnName="RETAILWMSLOCATIONIDDEFAULTRETURN" />
+          <ScalarProperty Name="RETAILWMSPALLETIDDEFAULTRETURN" ColumnName="RETAILWMSPALLETIDDEFAULTRETURN" />
+          <ScalarProperty Name="UNIQUECHECKDIGITS" ColumnName="UNIQUECHECKDIGITS" />
+          <ScalarProperty Name="VENDACCOUNTCUSTOM_RU" ColumnName="VENDACCOUNTCUSTOM_RU" />
+          <ScalarProperty Name="WAREHOUSEAUTORELEASERESERVATION" ColumnName="WAREHOUSEAUTORELEASERESERVATION" />
+          <ScalarProperty Name="WHSENABLED" ColumnName="WHSENABLED" />
+          <ScalarProperty Name="DEFAULTCONTAINERTYPECODE" ColumnName="DEFAULTCONTAINERTYPECODE" />
+          <ScalarProperty Name="DEFAULTPRODUCTIONINPUTLOCATION" ColumnName="DEFAULTPRODUCTIONINPUTLOCATION" />
+          <ScalarProperty Name="DEFAULTRETURNCREDITONLYLOCATION" ColumnName="DEFAULTRETURNCREDITONLYLOCATION" />
+          <ScalarProperty Name="WHSRAWMATERIALPOLICY" ColumnName="WHSRAWMATERIALPOLICY" />
+          <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+          <ScalarProperty Name="DEL_MODIFIEDTIME" ColumnName="DEL_MODIFIEDTIME" />
+          <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+          <ScalarProperty Name="DEL_CREATEDTIME" ColumnName="DEL_CREATEDTIME" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INVENTSITEs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.INVENTSITE">
+        <MappingFragment StoreEntitySet="INVENTSITE">
+          <ScalarProperty Name="SITEID" ColumnName="SITEID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DEFAULTDIMENSION" ColumnName="DEFAULTDIMENSION" />
+          <ScalarProperty Name="TIMEZONE" ColumnName="TIMEZONE" />
+          <ScalarProperty Name="ORDERENTRYDEADLINEGROUPID" ColumnName="ORDERENTRYDEADLINEGROUPID" />
+          <ScalarProperty Name="DEFAULTINVENTSTATUSID" ColumnName="DEFAULTINVENTSTATUSID" />
+          <ScalarProperty Name="TAXBRANCHREFRECID" ColumnName="TAXBRANCHREFRECID" />
+          <ScalarProperty Name="ISRECEIVINGWAREHOUSEOVERRIDEALLOWED" ColumnName="ISRECEIVINGWAREHOUSEOVERRIDEALLOWED" />
+          <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INVENTSUMs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.INVENTSUM">
+        <MappingFragment StoreEntitySet="INVENTSUM">
+          <ScalarProperty Name="ITEMID" ColumnName="ITEMID" />
+          <ScalarProperty Name="POSTEDQTY" ColumnName="POSTEDQTY" />
+          <ScalarProperty Name="POSTEDVALUE" ColumnName="POSTEDVALUE" />
+          <ScalarProperty Name="DEDUCTED" ColumnName="DEDUCTED" />
+          <ScalarProperty Name="RECEIVED" ColumnName="RECEIVED" />
+          <ScalarProperty Name="RESERVPHYSICAL" ColumnName="RESERVPHYSICAL" />
+          <ScalarProperty Name="RESERVORDERED" ColumnName="RESERVORDERED" />
+          <ScalarProperty Name="ONORDER" ColumnName="ONORDER" />
+          <ScalarProperty Name="ORDERED" ColumnName="ORDERED" />
+          <ScalarProperty Name="QUOTATIONISSUE" ColumnName="QUOTATIONISSUE" />
+          <ScalarProperty Name="QUOTATIONRECEIPT" ColumnName="QUOTATIONRECEIPT" />
+          <ScalarProperty Name="INVENTDIMID" ColumnName="INVENTDIMID" />
+          <ScalarProperty Name="CLOSED" ColumnName="CLOSED" />
+          <ScalarProperty Name="REGISTERED" ColumnName="REGISTERED" />
+          <ScalarProperty Name="PICKED" ColumnName="PICKED" />
+          <ScalarProperty Name="AVAILORDERED" ColumnName="AVAILORDERED" />
+          <ScalarProperty Name="AVAILPHYSICAL" ColumnName="AVAILPHYSICAL" />
+          <ScalarProperty Name="PHYSICALVALUE" ColumnName="PHYSICALVALUE" />
+          <ScalarProperty Name="ARRIVED" ColumnName="ARRIVED" />
+          <ScalarProperty Name="PHYSICALINVENT" ColumnName="PHYSICALINVENT" />
+          <ScalarProperty Name="CLOSEDQTY" ColumnName="CLOSEDQTY" />
+          <ScalarProperty Name="LASTUPDDATEPHYSICAL" ColumnName="LASTUPDDATEPHYSICAL" />
+          <ScalarProperty Name="LASTUPDDATEEXPECTED" ColumnName="LASTUPDDATEEXPECTED" />
+          <ScalarProperty Name="POSTEDVALUESECCUR_RU" ColumnName="POSTEDVALUESECCUR_RU" />
+          <ScalarProperty Name="PHYSICALVALUESECCUR_RU" ColumnName="PHYSICALVALUESECCUR_RU" />
+          <ScalarProperty Name="PDSCWARRIVED" ColumnName="PDSCWARRIVED" />
+          <ScalarProperty Name="PDSCWAVAILORDERED" ColumnName="PDSCWAVAILORDERED" />
+          <ScalarProperty Name="PDSCWAVAILPHYSICAL" ColumnName="PDSCWAVAILPHYSICAL" />
+          <ScalarProperty Name="PDSCWDEDUCTED" ColumnName="PDSCWDEDUCTED" />
+          <ScalarProperty Name="PDSCWONORDER" ColumnName="PDSCWONORDER" />
+          <ScalarProperty Name="PDSCWORDERED" ColumnName="PDSCWORDERED" />
+          <ScalarProperty Name="PDSCWPHYSICALINVENT" ColumnName="PDSCWPHYSICALINVENT" />
+          <ScalarProperty Name="PDSCWPICKED" ColumnName="PDSCWPICKED" />
+          <ScalarProperty Name="PDSCWPOSTEDQTY" ColumnName="PDSCWPOSTEDQTY" />
+          <ScalarProperty Name="PDSCWQUOTATIONISSUE" ColumnName="PDSCWQUOTATIONISSUE" />
+          <ScalarProperty Name="PDSCWQUOTATIONRECEIPT" ColumnName="PDSCWQUOTATIONRECEIPT" />
+          <ScalarProperty Name="PDSCWRECEIVED" ColumnName="PDSCWRECEIVED" />
+          <ScalarProperty Name="PDSCWREGISTERED" ColumnName="PDSCWREGISTERED" />
+          <ScalarProperty Name="PDSCWRESERVORDERED" ColumnName="PDSCWRESERVORDERED" />
+          <ScalarProperty Name="PDSCWRESERVPHYSICAL" ColumnName="PDSCWRESERVPHYSICAL" />
+          <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+          <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INVENTTABLEs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.INVENTTABLE">
+        <MappingFragment StoreEntitySet="INVENTTABLE">
+          <ScalarProperty Name="ITEMID" ColumnName="ITEMID" />
+          <ScalarProperty Name="ITEMTYPE" ColumnName="ITEMTYPE" />
+          <ScalarProperty Name="PURCHMODEL" ColumnName="PURCHMODEL" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+          <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+          <ScalarProperty Name="SALESMODEL" ColumnName="SALESMODEL" />
+          <ScalarProperty Name="COSTGROUPID" ColumnName="COSTGROUPID" />
+          <ScalarProperty Name="REQGROUPID" ColumnName="REQGROUPID" />
+          <ScalarProperty Name="EPCMANAGER" ColumnName="EPCMANAGER" />
+          <ScalarProperty Name="PRIMARYVENDORID" ColumnName="PRIMARYVENDORID" />
+          <ScalarProperty Name="NETWEIGHT" ColumnName="NETWEIGHT" />
+          <ScalarProperty Name="DEPTH" ColumnName="DEPTH" />
+          <ScalarProperty Name="UNITVOLUME" ColumnName="UNITVOLUME" />
+          <ScalarProperty Name="BOMUNITID" ColumnName="BOMUNITID" />
+          <ScalarProperty Name="ITEMPRICETOLERANCEGROUPID" ColumnName="ITEMPRICETOLERANCEGROUPID" />
+          <ScalarProperty Name="DENSITY" ColumnName="DENSITY" />
+          <ScalarProperty Name="COSTMODEL" ColumnName="COSTMODEL" />
+          <ScalarProperty Name="USEALTITEMID" ColumnName="USEALTITEMID" />
+          <ScalarProperty Name="ALTITEMID" ColumnName="ALTITEMID" />
+          <ScalarProperty Name="MATCHINGPOLICY" ColumnName="MATCHINGPOLICY" />
+          <ScalarProperty Name="INTRACODE" ColumnName="INTRACODE" />
+          <ScalarProperty Name="PRODFLUSHINGPRINCIP" ColumnName="PRODFLUSHINGPRINCIP" />
+          <ScalarProperty Name="MINIMUMPALLETQUANTITY" ColumnName="MINIMUMPALLETQUANTITY" />
+          <ScalarProperty Name="PBAITEMAUTOGENERATED" ColumnName="PBAITEMAUTOGENERATED" />
+          <ScalarProperty Name="WMSARRIVALHANDLINGTIME" ColumnName="WMSARRIVALHANDLINGTIME" />
+          <ScalarProperty Name="BOMMANUALRECEIPT" ColumnName="BOMMANUALRECEIPT" />
+          <ScalarProperty Name="PHANTOM" ColumnName="PHANTOM" />
+          <ScalarProperty Name="INTRAUNIT" ColumnName="INTRAUNIT" />
+          <ScalarProperty Name="BOMLEVEL" ColumnName="BOMLEVEL" />
+          <ScalarProperty Name="BATCHNUMGROUPID" ColumnName="BATCHNUMGROUPID" />
+          <ScalarProperty Name="AUTOREPORTFINISHED" ColumnName="AUTOREPORTFINISHED" />
+          <ScalarProperty Name="ORIGCOUNTRYREGIONID" ColumnName="ORIGCOUNTRYREGIONID" />
+          <ScalarProperty Name="STATISTICSFACTOR" ColumnName="STATISTICSFACTOR" />
+          <ScalarProperty Name="ALTCONFIGID" ColumnName="ALTCONFIGID" />
+          <ScalarProperty Name="STANDARDCONFIGID" ColumnName="STANDARDCONFIGID" />
+          <ScalarProperty Name="PRODPOOLID" ColumnName="PRODPOOLID" />
+          <ScalarProperty Name="PROPERTYID" ColumnName="PROPERTYID" />
+          <ScalarProperty Name="ABCTIEUP" ColumnName="ABCTIEUP" />
+          <ScalarProperty Name="ABCREVENUE" ColumnName="ABCREVENUE" />
+          <ScalarProperty Name="ABCVALUE" ColumnName="ABCVALUE" />
+          <ScalarProperty Name="ABCCONTRIBUTIONMARGIN" ColumnName="ABCCONTRIBUTIONMARGIN" />
+          <ScalarProperty Name="COMMISSIONGROUPID" ColumnName="COMMISSIONGROUPID" />
+          <ScalarProperty Name="SALESPERCENTMARKUP" ColumnName="SALESPERCENTMARKUP" />
+          <ScalarProperty Name="SALESCONTRIBUTIONRATIO" ColumnName="SALESCONTRIBUTIONRATIO" />
+          <ScalarProperty Name="SALESPRICEMODELBASIC" ColumnName="SALESPRICEMODELBASIC" />
+          <ScalarProperty Name="NAMEALIAS" ColumnName="NAMEALIAS" />
+          <ScalarProperty Name="PRODGROUPID" ColumnName="PRODGROUPID" />
+          <ScalarProperty Name="PROJCATEGORYID" ColumnName="PROJCATEGORYID" />
+          <ScalarProperty Name="GROSSDEPTH" ColumnName="GROSSDEPTH" />
+          <ScalarProperty Name="GROSSWIDTH" ColumnName="GROSSWIDTH" />
+          <ScalarProperty Name="GROSSHEIGHT" ColumnName="GROSSHEIGHT" />
+          <ScalarProperty Name="STANDARDPALLETQUANTITY" ColumnName="STANDARDPALLETQUANTITY" />
+          <ScalarProperty Name="QTYPERLAYER" ColumnName="QTYPERLAYER" />
+          <ScalarProperty Name="SORTCODE" ColumnName="SORTCODE" />
+          <ScalarProperty Name="SERIALNUMGROUPID" ColumnName="SERIALNUMGROUPID" />
+          <ScalarProperty Name="ITEMBUYERGROUPID" ColumnName="ITEMBUYERGROUPID" />
+          <ScalarProperty Name="TAXPACKAGINGQTY" ColumnName="TAXPACKAGINGQTY" />
+          <ScalarProperty Name="WMSPALLETTYPEID" ColumnName="WMSPALLETTYPEID" />
+          <ScalarProperty Name="ORIGSTATEID" ColumnName="ORIGSTATEID" />
+          <ScalarProperty Name="WMSPICKINGQTYTIME" ColumnName="WMSPICKINGQTYTIME" />
+          <ScalarProperty Name="TARAWEIGHT" ColumnName="TARAWEIGHT" />
+          <ScalarProperty Name="PACKAGINGGROUPID" ColumnName="PACKAGINGGROUPID" />
+          <ScalarProperty Name="SCRAPVAR" ColumnName="SCRAPVAR" />
+          <ScalarProperty Name="SCRAPCONST" ColumnName="SCRAPCONST" />
+          <ScalarProperty Name="STANDARDINVENTCOLORID" ColumnName="STANDARDINVENTCOLORID" />
+          <ScalarProperty Name="STANDARDINVENTSIZEID" ColumnName="STANDARDINVENTSIZEID" />
+          <ScalarProperty Name="ITEMDIMCOSTPRICE" ColumnName="ITEMDIMCOSTPRICE" />
+          <ScalarProperty Name="ALTINVENTSIZEID" ColumnName="ALTINVENTSIZEID" />
+          <ScalarProperty Name="ALTINVENTCOLORID" ColumnName="ALTINVENTCOLORID" />
+          <ScalarProperty Name="FORECASTDMPINCLUDE" ColumnName="FORECASTDMPINCLUDE" />
+          <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+          <ScalarProperty Name="PALLETTAGGING" ColumnName="PALLETTAGGING" />
+          <ScalarProperty Name="ITEMTAGGINGLEVEL" ColumnName="ITEMTAGGINGLEVEL" />
+          <ScalarProperty Name="DEFAULTDIMENSION" ColumnName="DEFAULTDIMENSION" />
+          <ScalarProperty Name="FISCALLIFOAVOIDCALC" ColumnName="FISCALLIFOAVOIDCALC" />
+          <ScalarProperty Name="FISCALLIFONORMALVALUE" ColumnName="FISCALLIFONORMALVALUE" />
+          <ScalarProperty Name="FISCALLIFONORMALVALUECALC" ColumnName="FISCALLIFONORMALVALUECALC" />
+          <ScalarProperty Name="BOMCALCGROUPID" ColumnName="BOMCALCGROUPID" />
+          <ScalarProperty Name="INVENTFISCALLIFOGROUP" ColumnName="INVENTFISCALLIFOGROUP" />
+          <ScalarProperty Name="NGPCODESTABLE_FR" ColumnName="NGPCODESTABLE_FR" />
+          <ScalarProperty Name="ORIGCOUNTYID" ColumnName="ORIGCOUNTYID" />
+          <ScalarProperty Name="TAXFISCALCLASSIFICATION_BR" ColumnName="TAXFISCALCLASSIFICATION_BR" />
+          <ScalarProperty Name="PBAITEMCONFIGURABLE" ColumnName="PBAITEMCONFIGURABLE" />
+          <ScalarProperty Name="PBAINVENTITEMGROUPID" ColumnName="PBAINVENTITEMGROUPID" />
+          <ScalarProperty Name="PBAHIDEDIALOG" ColumnName="PBAHIDEDIALOG" />
+          <ScalarProperty Name="PBAHIDEAPPROVAL" ColumnName="PBAHIDEAPPROVAL" />
+          <ScalarProperty Name="PBAAUTOSTART" ColumnName="PBAAUTOSTART" />
+          <ScalarProperty Name="PBAMANDATORYCONFIG" ColumnName="PBAMANDATORYCONFIG" />
+          <ScalarProperty Name="INVENTPRODUCTTYPE_BR" ColumnName="INVENTPRODUCTTYPE_BR" />
+          <ScalarProperty Name="TAXATIONORIGIN_BR" ColumnName="TAXATIONORIGIN_BR" />
+          <ScalarProperty Name="TAXSERVICECODE_BR" ColumnName="TAXSERVICECODE_BR" />
+          <ScalarProperty Name="EXCISETARIFFCODES_IN" ColumnName="EXCISETARIFFCODES_IN" />
+          <ScalarProperty Name="CUSTOMSEXPORTTARIFFCODETABLE_IN" ColumnName="CUSTOMSEXPORTTARIFFCODETABLE_IN" />
+          <ScalarProperty Name="CUSTOMSIMPORTTARIFFCODETABLE_IN" ColumnName="CUSTOMSIMPORTTARIFFCODETABLE_IN" />
+          <ScalarProperty Name="SERVICECODETABLE_IN" ColumnName="SERVICECODETABLE_IN" />
+          <ScalarProperty Name="EXIMPRODUCTGROUPTABLE_IN" ColumnName="EXIMPRODUCTGROUPTABLE_IN" />
+          <ScalarProperty Name="PACKING_RU" ColumnName="PACKING_RU" />
+          <ScalarProperty Name="ASSETGROUPID_RU" ColumnName="ASSETGROUPID_RU" />
+          <ScalarProperty Name="ASSETID_RU" ColumnName="ASSETID_RU" />
+          <ScalarProperty Name="INTRASTATEXCLUDE" ColumnName="INTRASTATEXCLUDE" />
+          <ScalarProperty Name="INTRASTATPROCID_CZ" ColumnName="INTRASTATPROCID_CZ" />
+          <ScalarProperty Name="PKWIUCODE_PL" ColumnName="PKWIUCODE_PL" />
+          <ScalarProperty Name="EXCEPTIONCODE_BR" ColumnName="EXCEPTIONCODE_BR" />
+          <ScalarProperty Name="ICMSONSERVICE_BR" ColumnName="ICMSONSERVICE_BR" />
+          <ScalarProperty Name="PDSCWWMSSTANDARDPALLETQTY" ColumnName="PDSCWWMSSTANDARDPALLETQTY" />
+          <ScalarProperty Name="PDSCWWMSMINIMUMPALLETQTY" ColumnName="PDSCWWMSMINIMUMPALLETQTY" />
+          <ScalarProperty Name="PDSCWWMSQTYPERLAYER" ColumnName="PDSCWWMSQTYPERLAYER" />
+          <ScalarProperty Name="ALCOHOLMANUFACTURERID_RU" ColumnName="ALCOHOLMANUFACTURERID_RU" />
+          <ScalarProperty Name="ALCOHOLPRODUCTIONTYPEID_RU" ColumnName="ALCOHOLPRODUCTIONTYPEID_RU" />
+          <ScalarProperty Name="ALCOHOLSTRENGTH_RU" ColumnName="ALCOHOLSTRENGTH_RU" />
+          <ScalarProperty Name="ALTINVENTSTYLEID" ColumnName="ALTINVENTSTYLEID" />
+          <ScalarProperty Name="APPROXTAXVALUE_BR" ColumnName="APPROXTAXVALUE_BR" />
+          <ScalarProperty Name="BATCHMERGEDATECALCULATIONMETHOD" ColumnName="BATCHMERGEDATECALCULATIONMETHOD" />
+          <ScalarProperty Name="DAXINTEGRATIONKEY" ColumnName="DAXINTEGRATIONKEY" />
+          <ScalarProperty Name="MARKUPCODE_RU" ColumnName="MARKUPCODE_RU" />
+          <ScalarProperty Name="NRTAXGROUP_LV" ColumnName="NRTAXGROUP_LV" />
+          <ScalarProperty Name="PDSBASEATTRIBUTEID" ColumnName="PDSBASEATTRIBUTEID" />
+          <ScalarProperty Name="PDSBESTBEFORE" ColumnName="PDSBESTBEFORE" />
+          <ScalarProperty Name="PDSFREIGHTALLOCATIONGROUPID" ColumnName="PDSFREIGHTALLOCATIONGROUPID" />
+          <ScalarProperty Name="PDSITEMREBATEGROUPID" ColumnName="PDSITEMREBATEGROUPID" />
+          <ScalarProperty Name="PDSPOTENCYATTRIBRECORDING" ColumnName="PDSPOTENCYATTRIBRECORDING" />
+          <ScalarProperty Name="PDSSHELFADVICE" ColumnName="PDSSHELFADVICE" />
+          <ScalarProperty Name="PDSSHELFLIFE" ColumnName="PDSSHELFLIFE" />
+          <ScalarProperty Name="PDSTARGETFACTOR" ColumnName="PDSTARGETFACTOR" />
+          <ScalarProperty Name="PDSVENDORCHECKITEM" ColumnName="PDSVENDORCHECKITEM" />
+          <ScalarProperty Name="PMFPLANNINGITEMID" ColumnName="PMFPLANNINGITEMID" />
+          <ScalarProperty Name="PMFPRODUCTTYPE" ColumnName="PMFPRODUCTTYPE" />
+          <ScalarProperty Name="PMFYIELDPCT" ColumnName="PMFYIELDPCT" />
+          <ScalarProperty Name="SADRATECODE_PL" ColumnName="SADRATECODE_PL" />
+          <ScalarProperty Name="SKIPINTRACOMPANYSYNC_RU" ColumnName="SKIPINTRACOMPANYSYNC_RU" />
+          <ScalarProperty Name="STANDARDINVENTSTYLEID" ColumnName="STANDARDINVENTSTYLEID" />
+          <ScalarProperty Name="DSA_IN" ColumnName="DSA_IN" />
+          <ScalarProperty Name="EXCISERECORDTYPE_IN" ColumnName="EXCISERECORDTYPE_IN" />
+          <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+          <ScalarProperty Name="DEL_MODIFIEDTIME" ColumnName="DEL_MODIFIEDTIME" />
+          <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+          <ScalarProperty Name="CREATEDDATETIME" ColumnName="CREATEDDATETIME" />
+          <ScalarProperty Name="DEL_CREATEDTIME" ColumnName="DEL_CREATEDTIME" />
+          <ScalarProperty Name="CREATEDBY" ColumnName="CREATEDBY" />
+          <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INVENTTRANS">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.INVENTTRAN">
+        <MappingFragment StoreEntitySet="INVENTTRANS">
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="DATAAREAID" ColumnName="DATAAREAID" />
+          <ScalarProperty Name="MODIFIEDDATETIME" ColumnName="MODIFIEDDATETIME" />
+          <ScalarProperty Name="NONFINANCIALTRANSFERINVENTCLOSING" ColumnName="NONFINANCIALTRANSFERINVENTCLOSING" />
+          <ScalarProperty Name="PDSCWSETTLED" ColumnName="PDSCWSETTLED" />
+          <ScalarProperty Name="PDSCWQTY" ColumnName="PDSCWQTY" />
+          <ScalarProperty Name="INVENTTRANSORIGINTRANSIT_RU" ColumnName="INVENTTRANSORIGINTRANSIT_RU" />
+          <ScalarProperty Name="INVENTTRANSORIGINSALES_RU" ColumnName="INVENTTRANSORIGINSALES_RU" />
+          <ScalarProperty Name="INVENTTRANSORIGINDELIVERY_RU" ColumnName="INVENTTRANSORIGINDELIVERY_RU" />
+          <ScalarProperty Name="COSTAMOUNTSTDSECCUR_RU" ColumnName="COSTAMOUNTSTDSECCUR_RU" />
+          <ScalarProperty Name="VALUEOPENSECCUR_RU" ColumnName="VALUEOPENSECCUR_RU" />
+          <ScalarProperty Name="COSTAMOUNTSETTLEDSECCUR_RU" ColumnName="COSTAMOUNTSETTLEDSECCUR_RU" />
+          <ScalarProperty Name="QTYSETTLEDSECCUR_RU" ColumnName="QTYSETTLEDSECCUR_RU" />
+          <ScalarProperty Name="DATECLOSEDSECCUR_RU" ColumnName="DATECLOSEDSECCUR_RU" />
+          <ScalarProperty Name="COSTAMOUNTSECCURADJUSTMENT_RU" ColumnName="COSTAMOUNTSECCURADJUSTMENT_RU" />
+          <ScalarProperty Name="COSTAMOUNTSECCURPHYSICAL_RU" ColumnName="COSTAMOUNTSECCURPHYSICAL_RU" />
+          <ScalarProperty Name="COSTAMOUNTSECCURPOSTED_RU" ColumnName="COSTAMOUNTSECCURPOSTED_RU" />
+          <ScalarProperty Name="GROUPREFID_RU" ColumnName="GROUPREFID_RU" />
+          <ScalarProperty Name="GROUPREFTYPE_RU" ColumnName="GROUPREFTYPE_RU" />
+          <ScalarProperty Name="INVENTDIMIDSALES_RU" ColumnName="INVENTDIMIDSALES_RU" />
+          <ScalarProperty Name="STORNOPHYSICAL_RU" ColumnName="STORNOPHYSICAL_RU" />
+          <ScalarProperty Name="STORNO_RU" ColumnName="STORNO_RU" />
+          <ScalarProperty Name="INVENTTRANSORIGIN" ColumnName="INVENTTRANSORIGIN" />
+          <ScalarProperty Name="TAXAMOUNTPHYSICAL" ColumnName="TAXAMOUNTPHYSICAL" />
+          <ScalarProperty Name="PROJADJUSTREFID" ColumnName="PROJADJUSTREFID" />
+          <ScalarProperty Name="REVENUEAMOUNTPHYSICAL" ColumnName="REVENUEAMOUNTPHYSICAL" />
+          <ScalarProperty Name="TIMEEXPECTED" ColumnName="TIMEEXPECTED" />
+          <ScalarProperty Name="TRANSCHILDTYPE" ColumnName="TRANSCHILDTYPE" />
+          <ScalarProperty Name="TRANSCHILDREFID" ColumnName="TRANSCHILDREFID" />
+          <ScalarProperty Name="DATEINVENT" ColumnName="DATEINVENT" />
+          <ScalarProperty Name="INVENTDIMFIXED" ColumnName="INVENTDIMFIXED" />
+          <ScalarProperty Name="MARKINGREFINVENTTRANSORIGIN" ColumnName="MARKINGREFINVENTTRANSORIGIN" />
+          <ScalarProperty Name="INVENTDIMID" ColumnName="INVENTDIMID" />
+          <ScalarProperty Name="PROJCATEGORYID" ColumnName="PROJCATEGORYID" />
+          <ScalarProperty Name="PROJID" ColumnName="PROJID" />
+          <ScalarProperty Name="RETURNINVENTTRANSORIGIN" ColumnName="RETURNINVENTTRANSORIGIN" />
+          <ScalarProperty Name="COSTAMOUNTOPERATIONS" ColumnName="COSTAMOUNTOPERATIONS" />
+          <ScalarProperty Name="PICKINGROUTEID" ColumnName="PICKINGROUTEID" />
+          <ScalarProperty Name="DATECLOSED" ColumnName="DATECLOSED" />
+          <ScalarProperty Name="COSTAMOUNTSTD" ColumnName="COSTAMOUNTSTD" />
+          <ScalarProperty Name="DATESTATUS" ColumnName="DATESTATUS" />
+          <ScalarProperty Name="ACTIVITYNUMBER" ColumnName="ACTIVITYNUMBER" />
+          <ScalarProperty Name="VALUEOPEN" ColumnName="VALUEOPEN" />
+          <ScalarProperty Name="COSTAMOUNTSETTLED" ColumnName="COSTAMOUNTSETTLED" />
+          <ScalarProperty Name="QTYSETTLED" ColumnName="QTYSETTLED" />
+          <ScalarProperty Name="SHIPPINGDATECONFIRMED" ColumnName="SHIPPINGDATECONFIRMED" />
+          <ScalarProperty Name="SHIPPINGDATEREQUESTED" ColumnName="SHIPPINGDATEREQUESTED" />
+          <ScalarProperty Name="COSTAMOUNTADJUSTMENT" ColumnName="COSTAMOUNTADJUSTMENT" />
+          <ScalarProperty Name="VOUCHERPHYSICAL" ColumnName="VOUCHERPHYSICAL" />
+          <ScalarProperty Name="PACKINGSLIPID" ColumnName="PACKINGSLIPID" />
+          <ScalarProperty Name="INVOICERETURNED" ColumnName="INVOICERETURNED" />
+          <ScalarProperty Name="PACKINGSLIPRETURNED" ColumnName="PACKINGSLIPRETURNED" />
+          <ScalarProperty Name="STATUSRECEIPT" ColumnName="STATUSRECEIPT" />
+          <ScalarProperty Name="COSTAMOUNTPHYSICAL" ColumnName="COSTAMOUNTPHYSICAL" />
+          <ScalarProperty Name="DATEFINANCIAL" ColumnName="DATEFINANCIAL" />
+          <ScalarProperty Name="DATEEXPECTED" ColumnName="DATEEXPECTED" />
+          <ScalarProperty Name="VOUCHER" ColumnName="VOUCHER" />
+          <ScalarProperty Name="INVOICEID" ColumnName="INVOICEID" />
+          <ScalarProperty Name="CURRENCYCODE" ColumnName="CURRENCYCODE" />
+          <ScalarProperty Name="COSTAMOUNTPOSTED" ColumnName="COSTAMOUNTPOSTED" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="DATEPHYSICAL" ColumnName="DATEPHYSICAL" />
+          <ScalarProperty Name="INTERCOMPANYINVENTDIMTRANSFERRED" ColumnName="INTERCOMPANYINVENTDIMTRANSFERRED" />
+          <ScalarProperty Name="STATUSISSUE" ColumnName="STATUSISSUE" />
+          <ScalarProperty Name="ITEMID" ColumnName="ITEMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ECORESPRODUCTs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.ECORESPRODUCT">
+        <MappingFragment StoreEntitySet="ECORESPRODUCT">
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RELATIONTYPE" ColumnName="RELATIONTYPE" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+          <ScalarProperty Name="PDSCWPRODUCT" ColumnName="PDSCWPRODUCT" />
+          <ScalarProperty Name="PRODUCTTYPE" ColumnName="PRODUCTTYPE" />
+          <ScalarProperty Name="SEARCHNAME" ColumnName="SEARCHNAME" />
+          <ScalarProperty Name="DISPLAYPRODUCTNUMBER" ColumnName="DISPLAYPRODUCTNUMBER" />
+          <ScalarProperty Name="INSTANCERELATIONTYPE" ColumnName="INSTANCERELATIONTYPE" />
+          <ScalarProperty Name="ISPRODUCTVARIANTUNITCONVERSIONENABLED" ColumnName="ISPRODUCTVARIANTUNITCONVERSIONENABLED" />
+          <ScalarProperty Name="RETAILSTYLEGROUPID" ColumnName="RETAILSTYLEGROUPID" />
+          <ScalarProperty Name="RETAILSIZEGROUPID" ColumnName="RETAILSIZEGROUPID" />
+          <ScalarProperty Name="RETAILCOLORGROUPID" ColumnName="RETAILCOLORGROUPID" />
+          <ScalarProperty Name="VARIANTCONFIGURATIONTECHNOLOGY" ColumnName="VARIANTCONFIGURATIONTECHNOLOGY" />
+          <ScalarProperty Name="RETAITOTALWEIGHT" ColumnName="RETAITOTALWEIGHT" />
+          <ScalarProperty Name="PRODUCTMASTER" ColumnName="PRODUCTMASTER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ECORESPRODUCTTRANSLATIONs">
+      <EntityTypeMapping TypeName="MicrosoftDynamicsAXModel.ECORESPRODUCTTRANSLATION">
+        <MappingFragment StoreEntitySet="ECORESPRODUCTTRANSLATION">
+          <ScalarProperty Name="RECID" ColumnName="RECID" />
+          <ScalarProperty Name="PARTITION" ColumnName="PARTITION" />
+          <ScalarProperty Name="RECVERSION" ColumnName="RECVERSION" />
+          <ScalarProperty Name="MODIFIEDBY" ColumnName="MODIFIEDBY" />
+          <ScalarProperty Name="LANGUAGEID" ColumnName="LANGUAGEID" />
+          <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

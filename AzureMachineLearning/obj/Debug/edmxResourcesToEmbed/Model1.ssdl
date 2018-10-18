@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MicrosoftDynamicsAXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ECORESPRODUCT">
+    <Key>
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODUCTMASTER" Type="bigint" />
+    <Property Name="RETAITOTALWEIGHT" Type="int" />
+    <Property Name="VARIANTCONFIGURATIONTECHNOLOGY" Type="int" />
+    <Property Name="RETAILCOLORGROUPID" Type="nvarchar" MaxLength="10" />
+    <Property Name="RETAILSIZEGROUPID" Type="nvarchar" MaxLength="10" />
+    <Property Name="RETAILSTYLEGROUPID" Type="nvarchar" MaxLength="10" />
+    <Property Name="ISPRODUCTVARIANTUNITCONVERSIONENABLED" Type="int" />
+    <Property Name="INSTANCERELATIONTYPE" Type="bigint" Nullable="false" />
+    <Property Name="DISPLAYPRODUCTNUMBER" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="SEARCHNAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODUCTTYPE" Type="int" Nullable="false" />
+    <Property Name="PDSCWPRODUCT" Type="int" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RELATIONTYPE" Type="bigint" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ECORESPRODUCTTRANSLATION">
+    <Key>
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="PRODUCT" Type="bigint" Nullable="false" />
+    <Property Name="LANGUAGEID" Type="nvarchar" MaxLength="7" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INVENTDIM">
+    <Key>
+      <PropertyRef Name="INVENTDIMID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="PARTITION" />
+    </Key>
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTBATCHID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="WMSLOCATIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSPALLETID" Type="nvarchar" MaxLength="18" Nullable="false" />
+    <Property Name="INVENTSERIALID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTLOCATIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CONFIGID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTSIZEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTCOLORID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTSITEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTGTDID_RU" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="INVENTPROFILEID_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTOWNERID_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTSTYLEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LICENSEPLATEID" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="INVENTSTATUSID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SHA1HASH" Type="varbinary" MaxLength="28" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INVENTLOCATION">
+    <Key>
+      <PropertyRef Name="INVENTLOCATIONID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="PARTITION" />
+    </Key>
+    <Property Name="INVENTLOCATIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="MANUAL" Type="int" Nullable="false" />
+    <Property Name="EMPTYPALLETLOCATION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="MAXPICKINGROUTEVOLUME" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PICKINGLINETIME" Type="int" Nullable="false" />
+    <Property Name="MAXPICKINGROUTETIME" Type="int" Nullable="false" />
+    <Property Name="WMSLOCATIONIDDEFAULTRECEIPT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSLOCATIONIDDEFAULTISSUE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTLOCATIONIDREQMAIN" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="REQREFILL" Type="int" Nullable="false" />
+    <Property Name="INVENTLOCATIONTYPE" Type="int" Nullable="false" />
+    <Property Name="INVENTLOCATIONIDQUARANTINE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTLOCATIONLEVEL" Type="int" Nullable="false" />
+    <Property Name="REQCALENDARID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSAISLENAMEACTIVE" Type="int" Nullable="false" />
+    <Property Name="WMSRACKNAMEACTIVE" Type="int" Nullable="false" />
+    <Property Name="WMSRACKFORMAT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSLEVELNAMEACTIVE" Type="int" Nullable="false" />
+    <Property Name="WMSLEVELFORMAT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSPOSITIONNAMEACTIVE" Type="int" Nullable="false" />
+    <Property Name="WMSPOSITIONFORMAT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="USEWMSORDERS" Type="int" Nullable="false" />
+    <Property Name="INVENTLOCATIONIDTRANSIT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="VENDACCOUNT" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="BRANCHNUMBER" Type="nvarchar" MaxLength="13" Nullable="false" />
+    <Property Name="INVENTSITEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTCOUNTINGGROUP_BR" Type="int" Nullable="false" />
+    <Property Name="CUSTACCOUNT_BR" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTPROFILETYPE_RU" Type="int" Nullable="false" />
+    <Property Name="INVENTPROFILEID_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTLOCATIONIDGOODSINROUTE_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSLOCATIONIDGOODSINROUTE_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACTIVITYTYPE_RU" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="NUMBERSEQUENCEGROUP_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="RETAILWEIGHTEX1" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="FSHSTORE" Type="int" Nullable="false" />
+    <Property Name="RBODEFAULTWMSPALLETID" Type="nvarchar" MaxLength="18" Nullable="false" />
+    <Property Name="RBODEFAULTWMSLOCATIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="RBODEFAULTINVENTPROFILEID_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ALLOWLABORSTANDARDS" Type="int" Nullable="false" />
+    <Property Name="ALLOWMARKINGRESERVATIONREMOVAL" Type="int" Nullable="false" />
+    <Property Name="CONSOLIDATESHIPATRTW" Type="int" Nullable="false" />
+    <Property Name="CUSTACCOUNT_HU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CYCLECOUNTALLOWPALLETMOVE" Type="int" Nullable="false" />
+    <Property Name="DECREMENTLOADLINE" Type="int" Nullable="false" />
+    <Property Name="DEFAULTKANBANFINISHEDGOODSLOCATION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DEFAULTPRODUCTIONFINISHGOODSLOCATION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DEFAULTSHIPMAINTENANCELOC" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DEFAULTSTATUSID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRINTBOLBEFORESHIPCONFIRM" Type="int" Nullable="false" />
+    <Property Name="PRODRESERVEONLYWHSE" Type="int" Nullable="false" />
+    <Property Name="REMOVEINVENTBLOCKINGONSTATUSCHANGE" Type="int" Nullable="false" />
+    <Property Name="RESERVEATLOADPOST" Type="int" Nullable="false" />
+    <Property Name="RETAILINVENTNEGFINANCIAL" Type="int" Nullable="false" />
+    <Property Name="RETAILINVENTNEGPHYSICAL" Type="int" Nullable="false" />
+    <Property Name="RETAILWMSLOCATIONIDDEFAULTRETURN" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="RETAILWMSPALLETIDDEFAULTRETURN" Type="nvarchar" MaxLength="18" Nullable="false" />
+    <Property Name="UNIQUECHECKDIGITS" Type="int" Nullable="false" />
+    <Property Name="VENDACCOUNTCUSTOM_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="WAREHOUSEAUTORELEASERESERVATION" Type="int" Nullable="false" />
+    <Property Name="WHSENABLED" Type="int" Nullable="false" />
+    <Property Name="DEFAULTCONTAINERTYPECODE" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DEFAULTPRODUCTIONINPUTLOCATION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DEFAULTRETURNCREDITONLYLOCATION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WHSRAWMATERIALPOLICY" Type="int" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DEL_MODIFIEDTIME" Type="int" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DEL_CREATEDTIME" Type="int" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INVENTSITE">
+    <Key>
+      <PropertyRef Name="SITEID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="PARTITION" />
+    </Key>
+    <Property Name="SITEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="DEFAULTDIMENSION" Type="bigint" Nullable="false" />
+    <Property Name="TIMEZONE" Type="int" Nullable="false" />
+    <Property Name="ORDERENTRYDEADLINEGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DEFAULTINVENTSTATUSID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TAXBRANCHREFRECID" Type="bigint" Nullable="false" />
+    <Property Name="ISRECEIVINGWAREHOUSEOVERRIDEALLOWED" Type="int" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INVENTSUM">
+    <Key>
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="INVENTDIMID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="PARTITION" />
+    </Key>
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="POSTEDQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="POSTEDVALUE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="DEDUCTED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="RECEIVED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="RESERVPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="RESERVORDERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="ONORDER" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="ORDERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="QUOTATIONISSUE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="QUOTATIONRECEIPT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CLOSED" Type="int" Nullable="false" />
+    <Property Name="REGISTERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PICKED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="AVAILORDERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="AVAILPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PHYSICALVALUE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="ARRIVED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PHYSICALINVENT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="CLOSEDQTY" Type="int" Nullable="false" />
+    <Property Name="LASTUPDDATEPHYSICAL" Type="datetime" Nullable="false" />
+    <Property Name="LASTUPDDATEEXPECTED" Type="datetime" Nullable="false" />
+    <Property Name="POSTEDVALUESECCUR_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PHYSICALVALUESECCUR_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWARRIVED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWAVAILORDERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWAVAILPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWDEDUCTED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWONORDER" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWORDERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWPHYSICALINVENT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWPICKED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWPOSTEDQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWQUOTATIONISSUE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWQUOTATIONRECEIPT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWRECEIVED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWREGISTERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWRESERVORDERED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWRESERVPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INVENTTABLE">
+    <Key>
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="PARTITION" />
+    </Key>
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ITEMTYPE" Type="int" Nullable="false" />
+    <Property Name="PURCHMODEL" Type="int" Nullable="false" />
+    <Property Name="HEIGHT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="WIDTH" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SALESMODEL" Type="int" Nullable="false" />
+    <Property Name="COSTGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="REQGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EPCMANAGER" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PRIMARYVENDORID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NETWEIGHT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="DEPTH" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="UNITVOLUME" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="BOMUNITID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ITEMPRICETOLERANCEGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DENSITY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="COSTMODEL" Type="int" Nullable="false" />
+    <Property Name="USEALTITEMID" Type="int" Nullable="false" />
+    <Property Name="ALTITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MATCHINGPOLICY" Type="int" Nullable="false" />
+    <Property Name="INTRACODE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRODFLUSHINGPRINCIP" Type="int" Nullable="false" />
+    <Property Name="MINIMUMPALLETQUANTITY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PBAITEMAUTOGENERATED" Type="int" Nullable="false" />
+    <Property Name="WMSARRIVALHANDLINGTIME" Type="int" Nullable="false" />
+    <Property Name="BOMMANUALRECEIPT" Type="int" Nullable="false" />
+    <Property Name="PHANTOM" Type="int" Nullable="false" />
+    <Property Name="INTRAUNIT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="BOMLEVEL" Type="int" Nullable="false" />
+    <Property Name="BATCHNUMGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="AUTOREPORTFINISHED" Type="int" Nullable="false" />
+    <Property Name="ORIGCOUNTRYREGIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="STATISTICSFACTOR" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="ALTCONFIGID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="STANDARDCONFIGID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRODPOOLID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROPERTYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ABCTIEUP" Type="int" Nullable="false" />
+    <Property Name="ABCREVENUE" Type="int" Nullable="false" />
+    <Property Name="ABCVALUE" Type="int" Nullable="false" />
+    <Property Name="ABCCONTRIBUTIONMARGIN" Type="int" Nullable="false" />
+    <Property Name="COMMISSIONGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SALESPERCENTMARKUP" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SALESCONTRIBUTIONRATIO" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SALESPRICEMODELBASIC" Type="int" Nullable="false" />
+    <Property Name="NAMEALIAS" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJCATEGORYID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="GROSSDEPTH" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="GROSSWIDTH" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="GROSSHEIGHT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="STANDARDPALLETQUANTITY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="QTYPERLAYER" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SORTCODE" Type="int" Nullable="false" />
+    <Property Name="SERIALNUMGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ITEMBUYERGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TAXPACKAGINGQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="WMSPALLETTYPEID" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="ORIGSTATEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WMSPICKINGQTYTIME" Type="int" Nullable="false" />
+    <Property Name="TARAWEIGHT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PACKAGINGGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SCRAPVAR" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SCRAPCONST" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="STANDARDINVENTCOLORID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="STANDARDINVENTSIZEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ITEMDIMCOSTPRICE" Type="int" Nullable="false" />
+    <Property Name="ALTINVENTSIZEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ALTINVENTCOLORID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="FORECASTDMPINCLUDE" Type="int" Nullable="false" />
+    <Property Name="PRODUCT" Type="bigint" Nullable="false" />
+    <Property Name="PALLETTAGGING" Type="int" Nullable="false" />
+    <Property Name="ITEMTAGGINGLEVEL" Type="int" Nullable="false" />
+    <Property Name="DEFAULTDIMENSION" Type="bigint" Nullable="false" />
+    <Property Name="FISCALLIFOAVOIDCALC" Type="int" Nullable="false" />
+    <Property Name="FISCALLIFONORMALVALUE" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="FISCALLIFONORMALVALUECALC" Type="int" Nullable="false" />
+    <Property Name="BOMCALCGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTFISCALLIFOGROUP" Type="bigint" Nullable="false" />
+    <Property Name="NGPCODESTABLE_FR" Type="bigint" Nullable="false" />
+    <Property Name="ORIGCOUNTYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TAXFISCALCLASSIFICATION_BR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PBAITEMCONFIGURABLE" Type="int" Nullable="false" />
+    <Property Name="PBAINVENTITEMGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PBAHIDEDIALOG" Type="int" Nullable="false" />
+    <Property Name="PBAHIDEAPPROVAL" Type="int" Nullable="false" />
+    <Property Name="PBAAUTOSTART" Type="int" Nullable="false" />
+    <Property Name="PBAMANDATORYCONFIG" Type="int" Nullable="false" />
+    <Property Name="INVENTPRODUCTTYPE_BR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TAXATIONORIGIN_BR" Type="int" Nullable="false" />
+    <Property Name="TAXSERVICECODE_BR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EXCISETARIFFCODES_IN" Type="bigint" Nullable="false" />
+    <Property Name="CUSTOMSEXPORTTARIFFCODETABLE_IN" Type="bigint" Nullable="false" />
+    <Property Name="CUSTOMSIMPORTTARIFFCODETABLE_IN" Type="bigint" Nullable="false" />
+    <Property Name="SERVICECODETABLE_IN" Type="bigint" Nullable="false" />
+    <Property Name="EXIMPRODUCTGROUPTABLE_IN" Type="bigint" Nullable="false" />
+    <Property Name="PACKING_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ASSETGROUPID_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ASSETID_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INTRASTATEXCLUDE" Type="int" Nullable="false" />
+    <Property Name="INTRASTATPROCID_CZ" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PKWIUCODE_PL" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="EXCEPTIONCODE_BR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ICMSONSERVICE_BR" Type="int" Nullable="false" />
+    <Property Name="PDSCWWMSSTANDARDPALLETQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWWMSMINIMUMPALLETQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWWMSQTYPERLAYER" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="ALCOHOLMANUFACTURERID_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ALCOHOLPRODUCTIONTYPEID_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ALCOHOLSTRENGTH_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="ALTINVENTSTYLEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="APPROXTAXVALUE_BR" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="BATCHMERGEDATECALCULATIONMETHOD" Type="int" Nullable="false" />
+    <Property Name="DAXINTEGRATIONKEY" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MARKUPCODE_RU" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NRTAXGROUP_LV" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PDSBASEATTRIBUTEID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PDSBESTBEFORE" Type="int" Nullable="false" />
+    <Property Name="PDSFREIGHTALLOCATIONGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PDSITEMREBATEGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PDSPOTENCYATTRIBRECORDING" Type="int" Nullable="false" />
+    <Property Name="PDSSHELFADVICE" Type="int" Nullable="false" />
+    <Property Name="PDSSHELFLIFE" Type="int" Nullable="false" />
+    <Property Name="PDSTARGETFACTOR" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSVENDORCHECKITEM" Type="int" Nullable="false" />
+    <Property Name="PMFPLANNINGITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PMFPRODUCTTYPE" Type="int" Nullable="false" />
+    <Property Name="PMFYIELDPCT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SADRATECODE_PL" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SKIPINTRACOMPANYSYNC_RU" Type="int" Nullable="false" />
+    <Property Name="STANDARDINVENTSTYLEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DSA_IN" Type="int" Nullable="false" />
+    <Property Name="EXCISERECORDTYPE_IN" Type="int" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DEL_MODIFIEDTIME" Type="int" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DEL_CREATEDTIME" Type="int" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INVENTTRANS">
+    <Key>
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="STATUSISSUE" Type="int" Nullable="false" />
+    <Property Name="INTERCOMPANYINVENTDIMTRANSFERRED" Type="int" Nullable="false" />
+    <Property Name="DATEPHYSICAL" Type="datetime" Nullable="false" />
+    <Property Name="QTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="COSTAMOUNTPOSTED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="CURRENCYCODE" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="INVOICEID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="VOUCHER" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DATEEXPECTED" Type="datetime" Nullable="false" />
+    <Property Name="DATEFINANCIAL" Type="datetime" Nullable="false" />
+    <Property Name="COSTAMOUNTPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="STATUSRECEIPT" Type="int" Nullable="false" />
+    <Property Name="PACKINGSLIPRETURNED" Type="int" Nullable="false" />
+    <Property Name="INVOICERETURNED" Type="int" Nullable="false" />
+    <Property Name="PACKINGSLIPID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="VOUCHERPHYSICAL" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="COSTAMOUNTADJUSTMENT" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="SHIPPINGDATEREQUESTED" Type="datetime" Nullable="false" />
+    <Property Name="SHIPPINGDATECONFIRMED" Type="datetime" Nullable="false" />
+    <Property Name="QTYSETTLED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="COSTAMOUNTSETTLED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="VALUEOPEN" Type="int" Nullable="false" />
+    <Property Name="ACTIVITYNUMBER" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATESTATUS" Type="datetime" Nullable="false" />
+    <Property Name="COSTAMOUNTSTD" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="DATECLOSED" Type="datetime" Nullable="false" />
+    <Property Name="PICKINGROUTEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="COSTAMOUNTOPERATIONS" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="RETURNINVENTTRANSORIGIN" Type="bigint" Nullable="false" />
+    <Property Name="PROJID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PROJCATEGORYID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MARKINGREFINVENTTRANSORIGIN" Type="bigint" Nullable="false" />
+    <Property Name="INVENTDIMFIXED" Type="int" Nullable="false" />
+    <Property Name="DATEINVENT" Type="datetime" Nullable="false" />
+    <Property Name="TRANSCHILDREFID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TRANSCHILDTYPE" Type="int" Nullable="false" />
+    <Property Name="TIMEEXPECTED" Type="int" Nullable="false" />
+    <Property Name="REVENUEAMOUNTPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PROJADJUSTREFID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TAXAMOUNTPHYSICAL" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="INVENTTRANSORIGIN" Type="bigint" Nullable="false" />
+    <Property Name="STORNO_RU" Type="int" Nullable="false" />
+    <Property Name="STORNOPHYSICAL_RU" Type="int" Nullable="false" />
+    <Property Name="INVENTDIMIDSALES_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GROUPREFTYPE_RU" Type="int" Nullable="false" />
+    <Property Name="GROUPREFID_RU" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="COSTAMOUNTSECCURPOSTED_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="COSTAMOUNTSECCURPHYSICAL_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="COSTAMOUNTSECCURADJUSTMENT_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="DATECLOSEDSECCUR_RU" Type="datetime" Nullable="false" />
+    <Property Name="QTYSETTLEDSECCUR_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="COSTAMOUNTSETTLEDSECCUR_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="VALUEOPENSECCUR_RU" Type="int" Nullable="false" />
+    <Property Name="COSTAMOUNTSTDSECCUR_RU" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="INVENTTRANSORIGINDELIVERY_RU" Type="bigint" Nullable="false" />
+    <Property Name="INVENTTRANSORIGINSALES_RU" Type="bigint" Nullable="false" />
+    <Property Name="INVENTTRANSORIGINTRANSIT_RU" Type="bigint" Nullable="false" />
+    <Property Name="PDSCWQTY" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="PDSCWSETTLED" Type="numeric" Precision="32" Scale="16" Nullable="false" />
+    <Property Name="NONFINANCIALTRANSFERINVENTCLOSING" Type="bigint" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="PARTITION" Type="bigint" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MicrosoftDynamicsAXModelStoreContainer">
+    <EntitySet Name="ECORESPRODUCT" EntityType="Self.ECORESPRODUCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ECORESPRODUCTTRANSLATION" EntityType="Self.ECORESPRODUCTTRANSLATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTDIM" EntityType="Self.INVENTDIM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTLOCATION" EntityType="Self.INVENTLOCATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTSITE" EntityType="Self.INVENTSITE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTSUM" EntityType="Self.INVENTSUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTTABLE" EntityType="Self.INVENTTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INVENTTRANS" EntityType="Self.INVENTTRANS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
